@@ -1,0 +1,398 @@
+# 🚗 Royal Solution Technologies – Motor Sales Analysis
+
+## 📌 Project Overview
+
+This project was completed as a **Capstone Project for Royal Solution Technologies**.
+
+The project focuses on analyzing motor sales data to identify sales trends, customer patterns, location performance, vehicle preferences, and growth opportunities.
+
+The analysis was performed using **Power Query for data cleaning and transformation**, **DAX for KPI and growth-rate calculations**, and **Power BI for data visualization and dashboard development**.
+
+---
+
+## 🎯 Business Problem
+
+A motor sales business needs reliable insights into its sales performance to understand:
+
+- Which locations generate the highest sales?
+- Which car models are most popular?
+- Which customer age groups contribute the most sales?
+- How are sales changing over time?
+- Is the business experiencing positive growth?
+- Which locations require strategic attention?
+- What actions can management take to improve sales performance?
+
+This project uses data analysis and visualization to answer these questions and support data-driven decision-making.
+
+---
+
+## 🎯 Project Objectives
+
+The key objectives of this project were to:
+
+1. Clean and transform the motor sales dataset.
+2. Resolve duplicate Transaction IDs.
+3. Create a unique key for each transaction.
+4. Standardize text values and data types.
+5. Create additional analytical columns.
+6. Develop KPIs using DAX.
+7. Analyze monthly sales and growth rates.
+8. Analyze sales by gender, location, car model, and age range.
+9. Build an interactive Power BI dashboard.
+10. Provide actionable business recommendations.
+
+---
+
+## 📊 Dataset Overview
+
+| Dataset Attribute | Description |
+|---|---|
+| Industry | Motor/Automobile Sales |
+| Records | 1,498 |
+| Columns | 7 |
+| Data Cleaning | Power Query |
+| Data Analysis | DAX |
+| Visualization | Power BI |
+
+### Data Quality Issue
+
+The dataset contained **duplicate Transaction IDs**, meaning Transaction ID could not reliably serve as a unique identifier.
+
+To resolve this issue, an **Index Key** was created in Power Query to uniquely identify each record.
+
+Other data preparation activities included:
+
+- Standardizing text values
+- Standardizing data types
+- Creating two additional analytical columns
+- Preparing the dataset for analysis
+- Validating the cleaned dataset
+
+> **Data Quality Note:** The source dataset contains 1,498 records, while the dashboard reports 1,491 cars sold. This difference should be reconciled and documented as part of the final data-quality review.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Microsoft Power Query** – Data cleaning and transformation
+- **Microsoft Power BI** – Dashboard development and visualization
+- **DAX** – KPI and growth-rate calculations
+- **Data Analysis** – Business performance evaluation
+- **Data Visualization** – Interactive reporting
+
+---
+
+## 🔄 Data Cleaning & Transformation
+
+All major cleaning and transformation processes were completed using **Power Query**.
+
+### Key steps:
+
+1. Identified duplicate Transaction IDs.
+2. Created an Index Key to provide a unique identifier.
+3. Standardized text fields.
+4. Corrected and standardized data types.
+5. Created two additional analytical columns.
+6. Validated the transformed data.
+7. Loaded the cleaned dataset into Power BI.
+
+---
+
+## 📈 Key Performance Indicators
+
+The Power BI dashboard includes the following KPIs:
+
+| KPI | Result |
+|---|---:|
+| Total Cars Sold | **1,491** |
+| Previous Month | **1,430** |
+| Variance | **+61** |
+| Growth Rate | **4.27%** |
+
+The business recorded **61 more cars sold** compared with the previous period, representing an overall growth rate of **4.27%**.
+
+---
+
+## 📊 Dashboard
+
+
+
+### Dashboard Features
+
+The dashboard provides analysis of:
+
+- Total cars sold
+- Sales variance
+- Growth rate
+- Previous-month sales
+- Sales by gender
+- Sales by location
+- Sales by car model
+- Sales by customer age range
+- Monthly sales trend
+- Monthly growth rate
+
+Interactive filters are available for **Gender** and **Location**.
+
+---
+
+# 🔍 Business Analysis
+
+## 1. Sales Performance
+
+The business recorded **1,491 cars sold**, compared with **1,430 in the previous period**.
+
+This represents:
+
+- **61 additional cars sold**
+- **4.27% overall growth**
+
+The positive growth indicates that overall sales performance improved.
+
+However, the monthly trend shows considerable fluctuations, meaning the business needs to focus on maintaining consistent growth.
+
+---
+
+## 2. Sales by Gender
+
+| Gender | Cars Sold | Percentage |
+|---|---:|---:|
+| Male | 766 | 51.37% |
+| Female | 725 | 48.63% |
+
+The customer distribution is relatively balanced between male and female customers.
+
+### Business Insight
+
+The business should avoid relying on a single gender segment and should continue developing marketing strategies that appeal to both groups.
+
+---
+
+## 3. Sales by Location
+
+| Location | Cars Sold | Growth Rate |
+|---|---:|---:|
+| Lagos | 361 | 3.74% |
+| Osun | 337 | 3.69% |
+| Ogun | 336 | 3.70% |
+| Oyo | 224 | 5.66% 
+| Ondo | 216 | 5.88% |
+| Ekiti | 17 | 0.00% |
+
+### Key Insights
+
+- **Lagos** has the highest sales volume with 361 cars.
+- **Ondo** has the highest growth rate at 5.88%.
+- **Oyo** follows with 5.66% growth.
+- **Ekiti** has the lowest sales volume with only 17 cars and 0% growth.
+
+### Business Interpretation
+
+Lagos is currently the strongest market by sales volume, while Ondo and Oyo show promising growth potential.
+
+Ekiti requires further investigation to determine why sales performance is significantly lower.
+
+---
+
+## 4. Sales by Car Model
+
+The leading car models are:
+
+| Rank | Car Model | Cars Sold |
+|---:|---|---:|
+| 1 | Toyota Corolla | 201 |
+| 2 | Ford Fiesta | 200 |
+| 3 | Honda Civic | 198 |
+| 4 | Nissan Rogue | 197 |
+| 5 | Hyundai Sonata | 192 |
+
+### Business Insight
+
+Toyota Corolla is the highest-selling model, followed closely by Ford Fiesta and Honda Civic.
+
+The business should ensure adequate inventory for high-performing models while considering profitability, inventory turnover, and customer demand before making purchasing decisions.
+
+---
+
+## 5. Sales by Age Range
+
+| Age Range | Cars Sold |
+|---|---:|
+| 26–30 | 480 |
+| 31–35 | 457 |
+| 36–40 | 320 |
+| 41–45 | 114 |
+| 46–50 | 105 |
+| 21–25 | 15 |
+
+### Key Insight
+
+Customers aged **26–35** represent the largest customer segment.
+
+Together, the 26–30 and 31–35 groups account for **937 sales**, representing approximately **62.8% of total dashboard sales**.
+
+### Business Implication
+
+The 26–35 age group should be a major focus of the company's marketing and customer acquisition strategy.
+
+---
+
+# 📉 Growth Rate Analysis
+
+Overall sales growth is **positive at 4.27%**.
+
+However, the monthly growth pattern is not consistent.
+
+### Important observations
+
+- Sales increased strongly from January through May.
+- Sales dropped from 130 cars in May to 90 in June.
+- Sales recovered from July and continued increasing through November.
+- November recorded the highest monthly sales of **200 cars**.
+- December sales dropped sharply to **61 cars**.
+- December recorded a **-69.50% growth rate**.
+
+### Is the Business Productive?
+
+**Overall, yes — but growth is not consistent.**
+
+The positive **4.27% overall growth rate** indicates that the business is growing compared with the previous period.
+
+However, the significant monthly declines show that the business has a **sales consistency problem**.
+
+Therefore:
+
+> **The business is experiencing positive overall growth, but management needs to reduce sales volatility and improve consistency to achieve sustainable long-term performance.**
+
+---
+
+# 💡 Key Business Insights
+
+The analysis produced the following major insights:
+
+1. Overall sales increased by **4.27%**.
+2. The business sold **1,491 cars** during the analyzed period.
+3. Lagos recorded the highest sales volume with **361 cars**.
+4. Ondo recorded the highest location growth rate at **5.88%**.
+5. Customers aged **26–35** account for approximately **62.8%** of total sales.
+6. Male and female customers have relatively balanced sales participation.
+7. Toyota Corolla was the highest-selling car model with **201 sales**.
+8. Sales dropped significantly in **June and December**.
+9. December recorded the most significant decline at **-69.50%**.
+10. Ekiti recorded the weakest location performance with only **17 sales**.
+
+---
+
+# 🚀 Business Recommendations
+
+## 1. Investigate the December Sales Decline
+
+The **69.50% decline in December** should be investigated.
+
+Management should examine:
+
+- Inventory availability
+- Pricing
+- Marketing activities
+- Seasonal demand
+- Customer financing
+- Sales-team performance
+- Vehicle availability
+
+---
+
+## 2. Strengthen High-Growth Locations
+
+Ondo and Oyo recorded the strongest growth rates.
+
+Management should investigate the factors driving their performance and consider increasing targeted marketing and sales activities in these locations.
+
+---
+
+## 3. Improve Ekiti Performance
+
+Ekiti recorded only 17 sales and 0% growth.
+
+Management should investigate:
+
+- Market demand
+- Customer preferences
+- Pricing
+- Distribution
+- Marketing effectiveness
+- Product availability
+
+---
+
+## 4. Target the 26–35 Customer Segment
+
+Since customers aged 26–35 represent the largest customer segment, the company should consider:
+
+- Targeted digital marketing
+- Social media campaigns
+- Flexible payment options
+- Financing packages
+- Trade-in promotions
+- Affordable vehicle packages
+
+---
+
+## 5. Optimize Vehicle Inventory
+
+High-performing models such as Toyota Corolla, Ford Fiesta, Honda Civic, Nissan Rogue, and Hyundai Sonata should be monitored closely to avoid stock shortages.
+
+However, inventory decisions should also consider **profit margins and inventory turnover**, not just sales volume.
+
+---
+
+## 6. Monitor Growth Monthly
+
+Management should establish a monthly performance-monitoring system using:
+
+- Sales volume
+- Growth rate
+- Revenue
+- Profit margin
+- Location performance
+- Vehicle model performance
+- Customer demographics
+- Inventory turnover
+
+This will allow management to identify negative trends early and take corrective action.
+
+---
+
+# 🏁 Conclusion
+
+This project demonstrates how **Power Query, DAX, and Power BI** can be used to transform raw motor sales data into actionable business intelligence.
+
+The analysis shows that the business achieved **positive overall growth of 4.27%**, with 1,491 cars sold compared with 1,430 in the previous period.
+
+However, sales performance remains volatile, with significant declines in June and December.
+
+Lagos remains the strongest market by sales volume, while Ondo and Oyo show promising growth. Customers aged 26–35 represent the largest customer segment, while demand is relatively balanced between male and female customers.
+
+Overall, the business is **growing but needs to improve sales consistency**.
+
+The insights generated from this analysis can support better **inventory planning, targeted marketing, location-specific strategies, customer segmentation, and sales performance monitoring**.
+
+---
+
+## 📁 Project Structure
+
+```text
+Royal-Motor-Sales-Analysis/
+│
+├── README.md
+│
+├── images/
+│   └── royal_motor_dashboard.png
+│
+├── data/
+│   └── motor_sales_data.xlsx
+│
+├── powerbi/
+│   └── Royal_Motor_Dashboard.pbix
+│
+└── documentation/
+    └── Motor_Sales_Analysis_Report.pdf
